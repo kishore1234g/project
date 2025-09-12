@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Preparedness Platform</title>
+    <link rel="icon" type="image" href="./img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        Disaster Preparedness & Response Platform
+        <nav>
+            <a href="#modules">Modules</a>
+            <a href="#drills">Virtual Drills</a>
+            <a href="#alerts">Alerts</a>
+            <a href="#contacts">Emergency Contacts</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="modules">
+            <h2>Education Modules</h2>
+            <div class="grid">
+                <a href="earthquake.html">
+                    <div class="card">
+                        <h3>Earthquake Safety</h3>
+                        <p>Interactive lessons on earthquake preparedness and safe responses.</p>
+                    </div>
+                </a>
+                <a href="flood.html">
+                    <div class="card">
+                        <h3>Flood Preparedness</h3>
+                        <p>Guidelines and scenarios to handle flood emergencies effectively.</p>
+                    </div>
+                </a>
+                <a href="fire.html">
+                    <div class="card">
+                        <h3>Fire Safety</h3>
+                        <p>Practical modules on fire drills, extinguisher use, and evacuation.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="drills" style="margin-top:2rem;">
+            <div class="card">
+                <h2>Virtual Drills</h2>
+                <p>Simulated disaster drills for hands-on practice in a safe digital environment.</p>
+                <button onclick="alert('Virtual Drills will be added soon !')">Start Drill</button>
+            </div>
+        </section>
+
+        <section id="alerts" style="margin-top:2rem;">
+            <h2 style="margin-bottom:1rem;">Alerts</h2>
+            <div class="grid">
+
+                <div class="card flood">
+                    <div class="alert-header">
+                        <h3> Flood Warning - Coastal Region <span class="badge">NEW</span></h3>
+                        <button class="close-btn" onclick="this.parentElement.parentElement.remove()">✖</button>
+                    </div>
+                    <p>Issued: <span class="time">2 hrs ago</span> | Stay away from low-lying areas.</p>
+
+                </div>
+
+
+                <div class="card heat">
+                    <div class="alert-header">
+                        <h3> Heatwave Alert - Tamil Nadu</h3>
+                        <button class="close-btn" onclick="this.parentElement.parentElement.remove()">✖</button>
+                    </div>
+                    <p>Issued: <span class="time">1 day ago</span> | Stay hydrated and indoors if possible.</p>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contacts" style="margin-top:2rem;">
+            <div class="card">
+                <h2>Emergency Contacts</h2>
+                <ul>
+                    <li>🚑 Ambulance: 108</li>
+                    <li>🚒 Fire Service: 101</li>
+                    <li>👮 Police: 100</li>
+                    <li>🏥 Local Hospital: +91-9876543210</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 GlitchEx | Disaster Preparedness Platform
+    </footer>
+</body>
+
+</html>
